@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="التعرف على النصوص (OCR)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="التعرف على النصوص من الصور" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        android:contentDescription="الصورة المختارة" />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="التقط صورة"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="التقط صورة من الكاميرا" />
+
+    <Button
+        android:id="@+id/gallery_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="اختر من المعرض"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="اختر صورة من المعرض" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="جاري المعالجة" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="النتيجة:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="النتيجة" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="لم يتم اختيار صورة بعد"
+            android:contentDescription="نتيجة التعرف على النصوص" />
+
+    </ScrollView>
+
+</LinearLayout>

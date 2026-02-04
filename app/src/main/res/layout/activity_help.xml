@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المساعدة"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="المساعدة" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="البدء السريع"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="البدء السريع" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. فعّل خدمة الوصولية من إعدادات النظام\n2. استخدم الاختصارات للتنقل\n3. اضبط الإعدادات حسب احتياجاتك"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="خطوات البدء السريع" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الاختصارات الأساسية"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الاختصارات الأساسية" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• التالي: سحب لليمين\n• السابق: سحب لليسار\n• تفعيل: نقر مزدوج\n• القائمة: نقر طويل"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="الاختصارات الأساسية" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الأسئلة الشائعة"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الأسئلة الشائعة" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="س: كيف أفعّل الخدمة؟\nج: انتقل إلى الإعدادات > الوصولية > اختر قارئ الشاشة NVDA\n\nس: كيف أغير السرعة؟\nج: افتح التفضيلات واستخدم منزلق السرعة\n\nس: هل يدعم اللغة العربية؟\nج: نعم، يدعم اللغة العربية بالكامل"
+            android:textSize="14sp"
+            android:contentDescription="الأسئلة الشائعة والإجابات" />
+
+    </LinearLayout>
+
+</ScrollView>

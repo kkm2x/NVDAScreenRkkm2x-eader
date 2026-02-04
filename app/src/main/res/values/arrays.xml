@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Synthesiser Options -->
+    <string-array name="synthesiser_array">
+        <item>Google</item>
+        <item>eSpeak</item>
+        <item>OneCore</item>
+    </string-array>
+
+    <!-- Voice Options -->
+    <string-array name="voice_array">
+        <item>العربية (السعودية)</item>
+        <item>العربية (مصر)</item>
+        <item>العربية (الإمارات)</item>
+        <item>العربية (الأردن)</item>
+        <item>العربية (فلسطين)</item>
+    </string-array>
+
+    <!-- Speech Mode Options -->
+    <string-array name="speech_mode_array">
+        <item>قراءة كاملة</item>
+        <item>أصوات فقط</item>
+        <item>بدون صوت</item>
+    </string-array>
+
+    <!-- Review Mode Options -->
+    <string-array name="review_mode_array">
+        <item>مراجعة الكائن</item>
+        <item>مراجعة المستند</item>
+        <item>مراجعة الشاشة</item>
+    </string-array>
+
+    <!-- Navigation Mode Options -->
+    <string-array name="navigation_mode_array">
+        <item>وضع التصفح</item>
+        <item>وضع التركيز</item>
+        <item>وضع الكائنات</item>
+    </string-array>
+
+    <!-- Punctuation Level Options -->
+    <string-array name="punctuation_level_array">
+        <item>لا شيء</item>
+        <item>بعض الرموز</item>
+        <item>معظم الرموز</item>
+        <item>جميع الرموز</item>
+    </string-array>
+
+    <!-- NVDA Modifier Key Options -->
+    <string-array name="nvda_modifier_key_array">
+        <item>Caps Lock</item>
+        <item>Insert</item>
+    </string-array>
+
+    <!-- Keyboard Layout Options -->
+    <string-array name="keyboard_layout_array">
+        <item>سطح المكتب</item>
+        <item>الكمبيوتر المحمول</item>
+    </string-array>
+
+    <!-- Braille Table Options -->
+    <string-array name="braille_table_array">
+        <item>العربية</item>
+        <item>الإنجليزية</item>
+        <item>الفرنسية</item>
+        <item>الألمانية</item>
+        <item>الإسبانية</item>
+    </string-array>
+
+    <!-- OCR Language Options -->
+    <string-array name="ocr_language_array">
+        <item>العربية</item>
+        <item>الإنجليزية</item>
+        <item>الفرنسية</item>
+        <item>الألمانية</item>
+        <item>الإسبانية</item>
+        <item>الصينية</item>
+        <item>اليابانية</item>
+    </string-array>
+</resources>

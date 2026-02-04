@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nvda.screenreader">
+
+    <!-- Permissions for Accessibility Service -->
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.NVDAScreenReader">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- OCR Activity -->
+        <activity
+            android:name=".ui.OCRActivity"
+            android:exported="false"
+            android:label="التعرف على النصوص" />
+
+        <!-- Braille Activity -->
+        <activity
+            android:name=".ui.BrailleActivity"
+            android:exported="false"
+            android:label="محول برايل" />
+
+        <!-- NVDA Menu Activity -->
+        <activity
+            android:name=".ui.NVDAMenuActivity"
+            android:exported="false"
+            android:label="قائمة NVDA" />
+
+        <!-- Preferences Activity -->
+        <activity
+            android:name=".ui.PreferencesActivity"
+            android:exported="false"
+            android:label="التفضيلات" />
+
+        <!-- Tools Activity -->
+        <activity
+            android:name=".ui.ToolsActivity"
+            android:exported="false"
+            android:label="الأدوات" />
+
+        <!-- Help Activity -->
+        <activity
+            android:name=".ui.HelpActivity"
+            android:exported="false"
+            android:label="المساعدة" />
+
+        <!-- About Activity -->
+        <activity
+            android:name=".ui.AboutActivity"
+            android:exported="false"
+            android:label="حول التطبيق" />
+
+        <!-- Accessibility Service -->
+        <service
+            android:name=".accessibility.NVDAAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="محول برايل"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="محول برايل" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="جدول برايل"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="جدول برايل" />
+
+    <Spinner
+        android:id="@+id/braille_table_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="اختر جدول برايل" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="النص المدخل"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="النص المدخل" />
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="أدخل النص أو برايل"
+        android:gravity="top"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="حقل إدخال النص" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="تحويل إلى برايل"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="تحويل النص إلى برايل" />
+
+    <Button
+        android:id="@+id/reverse_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="تحويل من برايل"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="تحويل برايل إلى نص" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="النتيجة"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"
+        android:contentDescription="النتيجة" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/output_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="ستظهر النتيجة هنا"
+            android:contentDescription="نتيجة التحويل" />
+
+    </ScrollView>
+
+</LinearLayout>

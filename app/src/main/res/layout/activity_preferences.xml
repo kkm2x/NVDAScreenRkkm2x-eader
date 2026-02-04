@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Speech Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إعدادات الصوت"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="إعدادات الصوت" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محرك التحويل"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="محرك التحويل" />
+
+        <Spinner
+            android:id="@+id/synthesiser_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر محرك التحويل" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الصوت"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="الصوت" />
+
+        <Spinner
+            android:id="@+id/voice_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر الصوت" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سرعة القراءة"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="سرعة القراءة" />
+
+        <SeekBar
+            android:id="@+id/speech_rate_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="منزلق سرعة القراءة" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مستوى الصوت"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="مستوى الصوت" />
+
+        <SeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="80"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="منزلق مستوى الصوت" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="درجة الصوت"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="درجة الصوت" />
+
+        <SeekBar
+            android:id="@+id/pitch_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="منزلق درجة الصوت" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تنويع النبرة"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="تنويع النبرة" />
+
+        <SeekBar
+            android:id="@+id/inflection_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="منزلق تنويع النبرة" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مستوى نطق الرموز"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="مستوى نطق الرموز" />
+
+        <Spinner
+            android:id="@+id/punctuation_level_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر مستوى نطق الرموز" />
+
+        <CheckBox
+            android:id="@+id/announce_capitals_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قراءة الأحرف الكبيرة"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="قراءة الأحرف الكبيرة" />
+
+        <CheckBox
+            android:id="@+id/say_numbers_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قراءة الأرقام برقم"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="قراءة الأرقام برقم" />
+
+        <!-- Speech Mode -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="أوضاع القراءة"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="أوضاع القراءة" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="وضع القراءة"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="وضع القراءة" />
+
+        <Spinner
+            android:id="@+id/speech_mode_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر وضع القراءة" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="وضع المراجعة"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="وضع المراجعة" />
+
+        <Spinner
+            android:id="@+id/review_mode_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر وضع المراجعة" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="وضع التنقل"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="وضع التنقل" />
+
+        <Spinner
+            android:id="@+id/navigation_mode_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="اختر وضع التنقل" />
+
+        <!-- Announcements -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلانات"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلانات" />
+
+        <CheckBox
+            android:id="@+id/auto_read_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قراءة تلقائية"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="قراءة تلقائية" />
+
+        <CheckBox
+            android:id="@+id/announce_screen_changes_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن تغييرات الشاشة"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن تغييرات الشاشة" />
+
+        <CheckBox
+            android:id="@+id/announce_form_fields_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن حقول النماذج"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن حقول النماذج" />
+
+        <CheckBox
+            android:id="@+id/announce_links_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن الروابط"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن الروابط" />
+
+        <CheckBox
+            android:id="@+id/announce_graphics_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن الصور"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن الصور" />
+
+        <CheckBox
+            android:id="@+id/announce_buttons_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن الأزرار"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن الأزرار" />
+
+        <CheckBox
+            android:id="@+id/announce_menus_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن القوائم"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن القوائم" />
+
+        <CheckBox
+            android:id="@+id/announce_tables_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن الجداول"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن الجداول" />
+
+        <CheckBox
+            android:id="@+id/announce_frames_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن الإطارات"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن الإطارات" />
+
+        <CheckBox
+            android:id="@+id/announce_page_structure_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن هيكل الصفحة"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعلان عن هيكل الصفحة" />
+
+        <CheckBox
+            android:id="@+id/announce_emphasis_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعلان عن التركيز"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="الإعلان عن التركيز" />
+
+        <!-- Vision Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعدادات البصرية"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعدادات البصرية" />
+
+        <CheckBox
+            android:id="@+id/visual_highlight_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تمييز العنصر الحالي"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="تمييز العنصر الحالي" />
+
+        <CheckBox
+            android:id="@+id/focus_highlight_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تمييز التركيز"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="تمييز التركيز" />
+
+        <CheckBox
+            android:id="@+id/caret_highlight_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تمييز المؤشر"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="تمييز المؤشر" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سمك التمييز"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="سمك التمييز" />
+
+        <SeekBar
+            android:id="@+id/highlight_thickness_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="3"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="منزلق سمك التمييز" />
+
+        <!-- Touch Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إعدادات اللمس"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="إعدادات اللمس" />
+
+        <CheckBox
+            android:id="@+id/touch_typing_mode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="وضع الكتابة باللمس"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="وضع الكتابة باللمس" />
+
+        <CheckBox
+            android:id="@+id/touch_keyboard_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لوحة مفاتيح اللمس"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="لوحة مفاتيح اللمس" />
+
+        <CheckBox
+            android:id="@+id/tap_to_activate_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="النقر لتفعيل"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="النقر لتفعيل" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حساسية الحركات"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="حساسية الحركات" />
+
+        <SeekBar
+            android:id="@+id/flick_sensitivity_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="منزلق حساسية الحركات" />
+
+        <!-- Keyboard Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إعدادات لوحة المفاتيح"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="إعدادات لوحة المفاتيح" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مفتاح تعديل NVDA"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="مفتاح تعديل NVDA" />
+
+        <Spinner
+            android:id="@+id/nvda_modifier_key_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر مفتاح تعديل NVDA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تخطيط لوحة المفاتيح"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="تخطيط لوحة المفاتيح" />
+
+        <Spinner
+            android:id="@+id/keyboard_layout_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر تخطيط لوحة المفاتيح" />
+
+        <CheckBox
+            android:id="@+id/enable_key_bindings_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفعيل ربط المفاتيح"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="تفعيل ربط المفاتيح" />
+
+        <!-- Braille Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إعدادات برايل"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="إعدادات برايل" />
+
+        <CheckBox
+            android:id="@+id/braille_enabled_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفعيل دعم برايل"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="تفعيل دعم برايل" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جدول برايل"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="جدول برايل" />
+
+        <Spinner
+            android:id="@+id/braille_table_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="اختر جدول برايل" />
+
+        <!-- Advanced Settings -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعدادات المتقدمة"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="الإعدادات المتقدمة" />
+
+        <CheckBox
+            android:id="@+id/ocr_enabled_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفعيل OCR"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="تفعيل OCR" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="لغة OCR"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="لغة OCR" />
+
+        <Spinner
+            android:id="@+id/ocr_language_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="اختر لغة OCR" />
+
+        <CheckBox
+            android:id="@+id/enable_logging_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تفعيل السجل"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="تفعيل السجل" />
+
+        <CheckBox
+            android:id="@+id/performance_mode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="وضع الأداء"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="وضع الأداء" />
+
+    </LinearLayout>
+
+</ScrollView>

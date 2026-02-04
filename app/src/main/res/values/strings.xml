@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">قارئ الشاشة NVDA</string>
+    <string name="accessibility_service_description">قارئ شاشة متقدم يقرأ جميع محتويات الشاشة من أي تطبيق</string>
+    <string name="service_enabled">خدمة قارئ الشاشة مفعلة</string>
+    <string name="service_disabled">خدمة قارئ الشاشة معطلة</string>
+    <string name="toggle_reader">تشغيل/إيقاف القارئ</string>
+    <string name="volume_up">زيادة الصوت</string>
+    <string name="volume_down">تقليل الصوت</string>
+    <string name="speed_up">زيادة السرعة</string>
+    <string name="speed_down">تقليل السرعة</string>
+    <string name="read_screen">اقرأ الشاشة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="about">حول التطبيق</string>
+</resources>

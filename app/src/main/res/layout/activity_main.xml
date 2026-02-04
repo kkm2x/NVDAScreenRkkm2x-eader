@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قارئ الشاشة NVDA"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="قارئ الشاشة NVDA" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قارئ الشاشة: معطل"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="حالة القارئ" />
+
+    <!-- Toggle Button -->
+    <Button
+        android:id="@+id/toggle_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="تشغيل القارئ"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="تشغيل أو إيقاف قارئ الشاشة" />
+
+    <!-- Volume Control -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مستوى الصوت"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="مستوى الصوت" />
+
+    <SeekBar
+        android:id="@+id/volume_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="80"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="منزلق مستوى الصوت" />
+
+    <!-- Speed Control -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="سرعة القراءة"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="سرعة القراءة" />
+
+    <SeekBar
+        android:id="@+id/speed_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="منزلق سرعة القراءة" />
+
+    <!-- Menu Button -->
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="قائمة NVDA"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="فتح قائمة NVDA" />
+
+    <!-- Settings Button -->
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="فتح إعدادات الوصولية"
+        android:textSize="14sp"
+        android:contentDescription="فتح إعدادات الوصولية" />
+
+</LinearLayout>
